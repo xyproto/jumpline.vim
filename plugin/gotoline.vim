@@ -9,13 +9,14 @@
 "
 "============================================================================
 
-if exists('g:loaded_gotoline_plugin') || &compatible
+if exists('g:loaded_gotoline_plugin')
     finish
 endif
 let g:loaded_gotoline_plugin = 1
 
-" Jump to top or bottom, line in o
-function s:GotoLine()
+" Ask the user for a line number. If none is given, alternate
+" between jumping to the top and the bottom of the file.
+function gotoline#AskJump()
     let message = "error"
     let lineNumber = input('Go to line: ')
     " Replace 0 with 1
@@ -46,4 +47,4 @@ function s:GotoLine()
     echo message
 endfunction
 
-nmap <silent> <c-l> :call s:GotoLine()<cr>
+nmap <silent> <c-l> :call gotoline#AskJump()<cr>
