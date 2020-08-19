@@ -23,20 +23,23 @@ function gotoline#AskJump()
     if lineNumber == "0"
         let lineNumber = "1"
     endif
-    if lineNumber =~# '^\d\+$' " number check
+    if line("$") == 1
+        " Already the one line in the file
+        let message = "Top"
+    elseif lineNumber =~# '^\d\+$' " number check
         " Go to the given line number
         call cursor(lineNumber, 1)
         if lineNumber == "1"
             let message = "Top"
         elseif str2nr(lineNumber) >= line("$")
-            let message = "Bottom"
+            let message = "EOF"
         else
             let message = "Line " . lineNumber
         endif
     elseif line(".") == 1
         " Jump down
         call feedkeys('G')
-        let message = "Bottom"
+        let message = "EOF"
     else
         " Jump up
         call feedkeys('gg')
