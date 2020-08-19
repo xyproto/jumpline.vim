@@ -1,6 +1,6 @@
 # gotoline.vim
 
-The absolute ultimate keybinding for `ctrl-l` for ViM and NeoVim!
+The ultimate keybinding for `ctrl-l` for ViM and NeoVim!
 
 * Press `ctrl-l` and then `return` to alternate between jumping to the top of a file and to the bottom of a file.
 * Press `ctrl-l` and type `0` or `1` to jump to the first line.
