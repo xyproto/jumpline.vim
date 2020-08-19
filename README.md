@@ -1,4 +1,4 @@
-# gotoline.vim
+# gotoline.vim ![logo](img/logo.png)
 
 The ultimate keybinding for `ctrl-l` for ViM and NeoVim!
 
