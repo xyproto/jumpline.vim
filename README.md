@@ -1,4 +1,4 @@
-# gotoline.vim ![logo](img/logo.png)
+# jumpline.vim ![logo](img/logo.png)
 
 The ultimate keybinding for `ctrl-l` for ViM and NeoVim!
 
@@ -17,13 +17,13 @@ The procedure is similar for Vundle.vim.
 ### vim-plug
 
     call plug#begin()
-    Plug 'xyproto/gotoline.vim'
+    Plug 'xyproto/jumpline.vim'
     call plug#end()
 
 ### Vundle.vim
 
     call vundle#begin()
-    Plugin 'xyproto/gotoline.vim'
+    Plugin 'xyproto/jumpline.vim'
     call vundle#end()
 
 ## General info

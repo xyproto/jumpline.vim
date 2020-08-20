@@ -1,22 +1,18 @@
 "============================================================================
-"File:        gotoline.vim
-"Description: Vim plugin for the ultimate keybinding for ctrl-l.
-"License:     This program is free software. It comes without any warranty,
-"             to the extent permitted by applicable law. You can redistribute
-"             it and/or modify it under the terms of the Do What The Fuck You
-"             Want To Public License, Version 2, as published by Sam Hocevar.
-"             See http://sam.zoy.org/wtfpl/COPYING for more details.
-"
+"File:        jumpline.vim
+"Description: Vim plugin for jumping to a specific line, top or bottom
+"License:     The Unlicense
+"             See: https://choosealicense.com/licenses/unlicense/
 "============================================================================
 
-if exists('g:loaded_gotoline_plugin')
+if exists('g:loaded_jumpline_plugin')
     finish
 endif
-let g:loaded_gotoline_plugin = 1
+let g:loaded_jumpline_plugin = 1
 
 " Ask the user for a line number. If none is given, alternate
 " between jumping to the top and the bottom of the file.
-function gotoline#AskJump()
+function jumpline#AskJump()
     let message = "error"
     let lineNumber = input('Go to line: ')
     " Replace 0 with 1
@@ -50,4 +46,5 @@ function gotoline#AskJump()
     echo message
 endfunction
 
-nmap <silent> <c-l> :call gotoline#AskJump()<cr>
+" ctrl-l is a good choice for jumping to a specific line, or to the top, or to the bottom
+nmap <silent> <c-l> :call jumpline#AskJump()<cr>
