@@ -28,14 +28,14 @@ function jumpline#AskJump()
         if lineNumber == "1"
             let message = "Top"
         elseif str2nr(lineNumber) >= line("$")
-            let message = "EOF"
+            let message = "Last line"
         else
             let message = "Line " . lineNumber
         endif
     elseif line(".") == 1
         " Jump down
         call feedkeys('G')
-        let message = "EOF"
+        let message = "Last line"
     else
         " Jump up
         call feedkeys('gg')
