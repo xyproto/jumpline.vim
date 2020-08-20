@@ -26,7 +26,7 @@ function jumpline#AskJump()
         " Go to the given line number
         call cursor(lineNumber, 1)
         if lineNumber == "1"
-            let message = "Top"
+            let message = "First line"
         elseif str2nr(lineNumber) >= line("$")
             let message = "Last line"
         else
@@ -39,12 +39,12 @@ function jumpline#AskJump()
     else
         " Jump up
         call feedkeys('gg')
-        let message = "Top"
+        let message = "First line"
     endif
     " Output a message and clear the status field
     redraw
     echo message
 endfunction
 
-" ctrl-l is a good choice for jumping to a specific line, or to the top, or to the bottom
+" bind ctrl-l to the function above
 nmap <silent> <c-l> :call jumpline#AskJump()<cr>
