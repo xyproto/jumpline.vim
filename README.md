@@ -1,4 +1,4 @@
-# jumpline.vim ![logo](img/jumpline32.png)
+# jumpline.vim ![logo](img/jumpline.svg)
 
 A pretty good keybinding for `ctrl-l` for ViM and NeoVim.
 
