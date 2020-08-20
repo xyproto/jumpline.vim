@@ -20,8 +20,8 @@ function jumpline#AskJump()
         let lineNumber = "1"
     endif
     if line("$") == 1
-        " Already the one line in the file
-        let message = "Top"
+        " Already on the one line in the file
+        let message = ""
     elseif lineNumber =~# '^\d\+$' " number check
         " Go to the given line number
         call cursor(lineNumber, 1)
