@@ -2,12 +2,13 @@
 
 ![logo](img/jumpline.svg)
 
-A pretty good keybinding for `ctrl-l` for ViM and NeoVim.
+A solid keybinding for `ctrl-l` for ViM and NeoVim, for jumping to a specific line, the top or to the bottom of a file.
 
-* Press `ctrl-l` and then `return` to alternate between jumping to the top of a file and to the bottom of a file.
-* Press `ctrl-l` and type `0` or `1` to jump to the first line.
-* Press `ctrl-l` and type a line number to jump to that line.
-* Press `ctrl-l` and type a line number after the end of the file to jump to the end of the file.
+* Press `ctrl-l` and then:
+  * `return` to alternate between jumping to the top of a file and to the bottom of a file.
+  * `0` or `1` to jump to the first line.
+  * A line number to jump to that line.
+  * A line number after the end of the file to jump to the end of the file.
 
 ## Installation
 
