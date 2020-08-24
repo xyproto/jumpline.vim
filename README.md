@@ -1,6 +1,6 @@
 # Jumpline
 
-A solid keybinding for `ctrl-l` for ViM and NeoVim, for jumping to a specific line, the top or to the bottom of a file.
+A solid keybinding for `ctrl-l` for ViM and NeoVim, for jumping to a specific line, to the top or to the bottom of a file.
 
 ---
 
